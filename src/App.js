@@ -1,20 +1,10 @@
 import "./App.css";
 import Counters from "./components/counters";
 import Navbar from "./components/navbar";
-import { Component } from "react";
+import {Component} from "react";
 import CounterFunc from "./components/counterFunc";
 
 class App extends Component {
-  constructor(props) {
-    super(props);
-    console.log("App - Constructor", this.props);
-  }
-
-  componentDidMount() {
-    // perfect place for ajax calls to the server
-    console.log("App - mounted");
-  }
-
   state = {
     counters: [
       { id: 1, value: 0 },
@@ -46,7 +36,6 @@ class App extends Component {
   };
 
   render() {
-    console.log("App - rendered");
     return (
       <div className="App">
         <Navbar

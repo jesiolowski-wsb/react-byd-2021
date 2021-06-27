@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, {Component} from "react";
 
 class Counter extends Component {
   render() {
@@ -20,15 +20,6 @@ class Counter extends Component {
         </button>
       </>
     );
-  }
-
-  componentDidUpdate(prevProps, prevState) {
-    console.log("prevProps", prevProps);
-    console.log("prevState", prevState);
-
-    if (prevProps.counter.value !== this.props.counter.values) {
-      // make the ajax call getting new data from the server
-    }
   }
 
   getClassNames() {
